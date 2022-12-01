@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c3639;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1ab80;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+@media screen and (max-width: 560px) {
+  /* For mobile phones: */
+  [class*=col-] {
+    width: 100%;
+  }
+}
+.sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2c3639;
+  text-align: center;
+}
+.sidebar .user-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.sidebar .user-img:hover {
+  transition: 200ms ease-in;
+  border: 8px solid #e1ab80;
+}
+.sidebar h1 {
+  margin-bottom: 1rem;
+}
+.sidebar code {
+  background-color: #3f4e4f;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #e1ab80;
+}
+.sidebar .social {
+  margin-top: 2rem;
+}
+.sidebar .social a {
+  padding: 0.61rem;
+  width: 20px;
+  height: 20px;
+  background-color: #3f4e4f;
+  margin-top: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.sidebar .social a i {
+  color: #dcd7c9;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+}
+.sidebar .social a:hover {
+  background-color: #dcd7c9;
+  transition: 200ms ease-in;
+}
+.sidebar .social a:hover i {
+  color: #e1ab80;
+  transition: 200ms ease-in;
+}
+
+.content {
+  margin-left: 25%;
+  background-color: #3f4e4f;
+  min-height: 100vh;
+}
+
+section {
+  margin: 4rem 2rem;
+}
+
+.project-container .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.project-container .row .col-6 {
+  width: 100%;
+}
+.project-container .row #project-card {
+  border-radius: 4px;
+  margin: 0.52rem auto;
+  background-color: #2c3639;
+}
+.project-container .row #project-card .card-body {
+  padding: 1rem 0.5rem;
+}
+.project-container .row #project-card .card-body h3 {
+  margin-bottom: 0.5rem;
+}
+.project-container .row #project-card .card-body p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #dcd7c9;
+}
+.project-container .row #project-card .card-body a {
+  text-decoration: none;
+  display: inline-block;
+  color: #e1ab80;
+}
+
+section h1 {
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  position: relative;
+}
+section h1::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #e1ab80;
+  position: absolute;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  background: #e1ab80;
+  color: #ffffff;
+}
+
+#about a.btn {
+  margin-top: 2rem;
+}
+#about p {
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+#skills ul {
+  margin-top: 1.52rem;
+}
+#skills li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  list-style: none;
+}
+#skills li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: #e1ab80;
+  font-size: 25px;
+  line-height: 19px;
+}
+
+@media screen and (max-width: 560px) {
+  .row {
+    flex-direction: column;
+  }
+  .row .sidebar {
+    height: 75vh;
+    position: relative;
+  }
+  .row .content {
+    margin-left: 0;
+  }
+  .project-container .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 990px) {
+  a.soc {
+    display: inline-table;
+  }
+}/*# sourceMappingURL=style.css.map */

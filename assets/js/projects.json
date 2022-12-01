@@ -1,0 +1,56 @@
+{
+    "project_build": [
+        {
+          "title":"Project One",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "href": "https://",
+          "stack":[
+            "WordPress",
+            "WooCommerce",
+            "RazorPay"
+          ]
+        },
+        {
+          "title":"Project Two",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "href": "http://",
+          "stack":[
+            "WordPress"
+          ]
+        },
+        {
+          "title":"Project Three",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "href": "#",
+          "stack":[
+            "HTML5, CSS3",
+            "JS, API"
+          ]
+        },
+         {
+          "title":"Project Four",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "href": "https://github.com/",
+          "stack":[
+            "JS"
+          ]
+        },
+        {
+          "title":"Project Five",
+          "text": " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "href": "https://github.com/",
+          "stack":[
+            "JS, Node.JS",
+            "cheerio"
+          ]
+        },
+        {
+          "title":"Project Six",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "href": "https://github.com/",
+          "stack":[
+            "batch"
+          ]
+        }
+      ]
+  }
